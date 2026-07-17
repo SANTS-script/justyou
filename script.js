@@ -30,7 +30,7 @@ const GALAXIES = [
     songLabel: "opm2.mp3 — now playing",
     message:
       "Some days feel heavy before they even start. And somehow, a single " +
-      "message from you — even a small one — is enough to shift the whole " +
+      "message from you  even a small one is enough to shift the whole " +
       "weight of it. You have this quiet way of making things feel lighter, " +
       "brighter, more okay. I notice it every time, even when I don't say it."
   },
@@ -44,8 +44,8 @@ const GALAXIES = [
     songLabel: "opm3.mp3 — now playing",
     message:
       "This is the galaxy I was most nervous to build. Because here's the " +
-      "truth: you matter to me, more than I usually let on. I built you an " +
-      "entire universe just to find a gentle way of saying it — I'm really, " +
+      "truth you matter to me, more than I usually let on and I like you. I built you an " +
+      "entire universe just to find a gentle way of saying it I'm really, " +
       "really glad you exist, and I'm grateful every single time our paths cross."
   }
 ];
