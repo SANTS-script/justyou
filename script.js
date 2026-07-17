@@ -13,7 +13,7 @@ const GALAXIES = [
     hue: [265, 320],           // violet -> pink
     coreColor: "#ffe9c7",
     audio: "audio-opm1",
-    songLabel: "opm1.mp3 — now playing",
+    songLabel: "you!.mp3 — now playing",
     message:
       "Thank you for meeting me exactly when I needed someone like you. " +
       "I don't think you realize how many ordinary days you quietly turned " +
@@ -27,7 +27,7 @@ const GALAXIES = [
     hue: [190, 260],           // cyan -> violet
     coreColor: "#d7fbff",
     audio: "audio-opm2",
-    songLabel: "opm2.mp3 — now playing",
+    songLabel: "last forever.mp3 — now playing",
     message:
       "Some days feel heavy before they even start. And somehow, a single " +
       "message from you  even a small one is enough to shift the whole " +
@@ -41,7 +41,7 @@ const GALAXIES = [
     hue: [320, 20],            // pink -> gold
     coreColor: "#fff3c4",
     audio: "audio-opm3",
-    songLabel: "opm3.mp3 — now playing",
+    songLabel: "anything 4 u.mp3 — now playing",
     message:
       "This is the galaxy I was most nervous to build. Because here's the " +
       "truth you matter to me, more than I usually let on and I like you. I built you an " +
