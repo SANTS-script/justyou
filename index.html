@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Among the Stars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Global background canvas: deep space starfield, always running -->
+<canvas id="bg-stars"></canvas>
+
+<!-- Warp / travel transition overlay -->
+<canvas id="warp-canvas"></canvas>
+<div id="warp-label"></div>
+
+<!-- Global back button -->
+<button id="backBtn" class="nav-btn back-btn" aria-label="Go back">← Back</button>
+
+<!-- ============ STAGE 1 : HERO / WALLPAPER ============ -->
+<section id="stage-hero" class="stage active">
+  <div class="nebula nebula-a"></div>
+  <div class="nebula nebula-b"></div>
+  <div class="hero-content">
+    <p class="eyebrow">a small universe, made for you</p>
+    <h1 class="title-glow">Among the Stars</h1>
+    <p class="subtitle">somewhere out there, a galaxy waits with your name on it</p>
+    <button id="playBtn" class="glow-btn">
+      <span class="play-icon">▶</span> Begin the Journey
+    </button>
+  </div>
+  <div class="scroll-hint">click play to launch</div>
+</section>
+
+<!-- ============ STAGE 2 : INTRODUCTION / GRATITUDE LETTER ============ -->
+<section id="stage-letter" class="stage">
+  <div class="nebula nebula-c"></div>
+  <div class="letter-wrap">
+    <div class="letter-card">
+      <p class="letter-heading">To the person who feels like home,</p>
+      <div class="letter-body">
+        <p>I don't know exactly how to say this, so I built you a universe instead.</p>
+        <p>Thank you — for the small things you probably don't even remember doing.
+          For replying to my messages even when you were tired. For the random
+          laughs that somehow fixed my entire day. For simply <em>being there</em>,
+          quietly, consistently, like a light that never asks for attention but
+          is always the first one I look for in the dark.</p>
+        <p>You make ordinary days feel like they're worth remembering. I wanted
+          to give you something that could hold even a little bit of how
+          grateful I am for you.</p>
+        <p>So — three galaxies, three feelings I've kept for you.
+          Ready to see them?</p>
+      </div>
+      <p class="letter-sign">— always, quietly grateful</p>
+    </div>
+    <button id="toGalaxiesBtn" class="glow-btn">Continue the Journey →</button>
+  </div>
+</section>
+
+<!-- ============ STAGE 3 : GALAXIES ============ -->
+<section id="stage-galaxies" class="stage">
+  <div class="galaxy-hud">
+    <div class="galaxy-progress">
+      <span class="dot" data-dot="1"></span>
+      <span class="dot" data-dot="2"></span>
+      <span class="dot" data-dot="3"></span>
+    </div>
+    <p id="galaxyHint" class="galaxy-hint">click the galaxy to enter it</p>
+  </div>
+
+  <canvas id="galaxy-canvas"></canvas>
+
+  <div id="galaxyLabel" class="galaxy-label"></div>
+
+  <button id="finaleBtn" class="glow-btn hidden">See the Final Message ✦</button>
+</section>
+
+<!-- ============ MESSAGE MODAL (opens when a galaxy is entered) ============ -->
+<div id="messageModal" class="modal-overlay">
+  <div class="modal-card">
+    <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+    <p id="modalTag" class="modal-tag"></p>
+    <h2 id="modalTitle" class="modal-title"></h2>
+    <p id="modalText" class="modal-text"></p>
+    <div class="modal-audio-row">
+      <span class="audio-icon">♪</span>
+      <span id="modalSong" class="modal-song"></span>
+    </div>
+    <button id="continueJourneyBtn" class="glow-btn small">Continue Journey →</button>
+  </div>
+</div>
+
+<!-- ============ FINALE ============ -->
+<section id="stage-finale" class="stage">
+  <div class="nebula nebula-a"></div>
+  <div class="finale-wrap">
+    <h2 class="finale-title">Thank you for traveling this far with me.</h2>
+    <p class="finale-text">
+      Every galaxy you opened is real — the way I feel about you isn't a
+      placeholder. Wherever you go from here, I hope you carry a little bit
+      of this warmth with you. Thank you for being you.
+    </p>
+    <p class="finale-sign">✦ end of the journey — but not of the feeling ✦</p>
+    <button id="replayBtn" class="glow-btn">Replay the Journey</button>
+  </div>
+</section>
+
+<!-- Background music players for each galaxy -->
+<audio id="audio-opm1" src="music/opm1.mp3" preload="none"></audio>
+<audio id="audio-opm2" src="music/opm2.mp3" preload="none"></audio>
+<audio id="audio-opm3" src="music/opm3.mp3" preload="none"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
